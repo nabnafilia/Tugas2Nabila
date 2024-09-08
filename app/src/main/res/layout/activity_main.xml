@@ -1,0 +1,79 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etNumber1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan angka pertama"
+        android:inputType="numberDecimal"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/etNumber2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Masukkan angka kedua"
+        android:inputType="numberDecimal"
+        tools:ignore="HardcodedText" />
+
+    <RadioGroup
+        android:id="@+id/rgOperation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="25sp"
+            android:layout_marginEnd="17dp"
+            tools:ignore="HardcodedText" />
+
+        <RadioButton
+            android:id="@+id/rbSubtract"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:layout_marginEnd="17dp"
+            tools:ignore="HardcodedText"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/rbMultiply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*"
+            android:layout_marginEnd="17dp"
+            tools:ignore="HardcodedText"
+            android:textSize="25sp" />
+
+        <RadioButton
+            android:id="@+id/rbDivide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"
+            android:layout_marginEnd="17dp"
+            tools:ignore="HardcodedText"
+            android:textSize="25sp" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnCalculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hitung"
+        android:textSize="20sp"
+        tools:ignore="HardcodedText"
+        android:backgroundTint="#c7115e"
+        android:textColor="#FFFFFF"/>
+
+</LinearLayout>
